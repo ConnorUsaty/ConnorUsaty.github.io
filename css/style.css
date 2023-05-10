@@ -72,10 +72,10 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
 
 .social ion-icon{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .social ion-icon:hover{
     color: darkgoldenrod;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
