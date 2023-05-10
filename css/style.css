@@ -70,6 +70,10 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     color: white;
 }
 
-icons a{
+.social a{
     color: white;
+}
+
+.social a:hover{
+    color: darkgoldenrod;
 }
