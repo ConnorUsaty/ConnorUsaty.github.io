@@ -59,21 +59,23 @@ ul li a{
     color: white;
     font-family: Arial;
     font-weight: bold;
-    transition: 0.4s ease-in-out;
 }
 
 ul li a:hover{ /* hover effect -> changes menu item text to match logo color when hovered over */
     color: darkgoldenrod; 
+    transition: 0.4s ease-in-out;
 }
 
 .content{
     color: white;
 }
 
-.social a{
+.social ion-icon{
     color: white;
+    font-size: 20px;
 }
 
-.social a:hover{
+.social ion-icon:hover{
     color: darkgoldenrod;
+    transition: 0.3s ease-in-out;
 }
