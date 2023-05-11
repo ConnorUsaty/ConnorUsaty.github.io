@@ -35,7 +35,7 @@
 .menu{
     height: 50px;
     width: max-content;
-    margin: auto;
+    margin: auto; /* centers menu */
 }
 
 ul{
@@ -83,7 +83,7 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     line-height: 25px;
     width: 680px;
     padding: 10px;
-    margin: auto; /* centers content */
+    margin: auto;
     margin-top: 10px;
     outline: 2px solid darkgoldenrod;
 }
