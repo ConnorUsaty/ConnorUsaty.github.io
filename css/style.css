@@ -5,7 +5,7 @@
 
 .home{
     width: 100%;
-    background: url(../images/home.jpg) no-repeat; 
+    background: url(../images/home.jpg);
     background-color: rgba(0, 0, 0, 0.85); /* adds a black overlay to the background image */
     background-blend-mode: multiply; /* allows for the black overlay to be seen */
     background-position: center;
@@ -30,6 +30,7 @@
     margin-top: 4px;
     margin-left: 75px;
     float: left;
+    user-select: none;
 }
 
 .menu{
@@ -56,11 +57,12 @@ ul li a{
     color: white;
     font-family: Arial;
     font-weight: bold;
+    transition: 0.3s ease;
+    user-select: none;
 }
 
 ul li a:hover{ /* hover effect -> changes menu item text to match logo color when hovered over */
     color: darkgoldenrod; 
-    transition: 0.3s ease-in-out; /* adds a smooth transition to the hover effect */
 }
 
 .about h1{
@@ -107,7 +109,7 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     outline: 2px solid darkgoldenrod;
 }
 
-.social {
+.social{
     width: max-content;
     margin: auto;
     margin-top: -45px;
@@ -117,11 +119,12 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     color: white;
     font-size: 35px;
     margin-left: 20px;
+    transition: 0.2s ease;
+    user-select: none;
 }
 
 .social ion-icon:hover{
     color: darkgoldenrod;
-    transition: 0.2s ease-in-out;
 }
 
 .break{
@@ -130,12 +133,12 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     background-color: black;
 }
 
-.blog {
+.blog{
     width: 100%;
-    background: url(../images/blogBack.jpg) no-repeat;
+    background: url(../images/blogBack.jpg);
     background-position: center;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5); /* adds a black overlay to the background image */
+    background-color: rgba(0, 0, 0, 0.6); /* adds a black overlay to the background image */
     background-blend-mode: multiply; /* allows for the black overlay to be seen */
     height: 100vh; /* vh -> viewport height */
 }
@@ -151,7 +154,7 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     padding-top: 15px; /* pushes content down from top of background */
 }
 
-.blog p{
+.blog .description{
     color: white;
     font-size: 18px;
     font-family: Arial;
@@ -163,32 +166,115 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     box-shadow: 0 0 6px rgba(255,255,255,1);
 }
 
-.glass {
+.blog .preview{
     width: 715px;
-    height: 390px;
+    height: 400px;
     margin: auto;
     margin-top: 25px;
-    box-shadow: 0 0 11px rgba(255,255,255,1);
+    box-shadow: 0 0 12px rgba(255,255,255,1);
     background-image: url(../images/blogBack.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.blog ion-icon{
+.mySlides{
     color: white;
     font-size: 20px;
+    font-family: Arial;
+    text-align: center;
+    width: 85%;
+    height: 100%;
+    line-height: 400px; /* centers text vertically */
+    margin: auto;
 }
 
-.blog ion-icon:hover{
-    color: rgb(57, 221, 24);
-    transition: 0.2s ease-in-out;
+/* centers text vertically if there is multiple lines*/
+.mySlides p{
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.projects {
+/* Next & previous buttons */
+.next, .prev{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 1150px; /* positions buttons in the middle of the image */
+    margin-top: -22px;
+    padding: 16px;
+    border-radius: 0 3px 3px 0; /* rounded corners */
+    transition: 0.6s ease; 
+    user-select: none; /* prevents user from selecting text */
+}
+  
+/* Position the "next button" to the right */
+.next{
+    margin-left: 673.5px; 
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.next:hover, .prev:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    user-select: none;
+}
+
+.active, .dot:hover{
+    background-color: #232323;
+}
+
+/* Fading animation */
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.blog .redirect{
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    width: max-content;
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow: 0 0 6px rgba(255,255,255,1);
+}
+
+.blog .redirect a{
+    color: white;
+    text-decoration: underline;
+    transition: 0.2s ease;
+}
+
+.blog .redirect a:hover{
+    color: rgb(114, 166, 105);
+}
+
+.projects{
     background-color: orange;
 }
 
-.resume {
+.resume{
     background-color: yellow;
 }
 

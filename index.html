@@ -46,14 +46,41 @@
 
     <div class="blog">
         <h1>BLOG</h1>
-        <p>This blog is to document my daily programming ventures and what I have learned from them. Including topics such as why or how I implemented a certain feature to my website or a Leetcode problem that I solved. Join me as I explore new technologies and techniques, and strive to become a better programmer.</p>
 
-        <div class="glass">
-
+        <div class="description">
+            <p>The goal of this blog is to document my daily programming ventures and what I have learned from them. Whether that be an update to my website, a new technology I'm learning or a Leetcode problem that I solved. Join me as I explore new technologies and techniques, and strive to become a better programmer.</p>
         </div>
 
-        <p>Check out my full blog: <a href="#"><ion-icon name="chatbox-outline"></ion-icon></a></p>
+        <div class="preview">
+            <div class="mySlides fade">
+                <p>BLOG POST 1</p>
+            </div>
+            
+            <div class="mySlides fade">
+                <p>BLOG POST 2</p>
+            </div>
+            
+            <div class="mySlides fade">
+                <p>BLOG POST 3</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="redirect">
+            <p>Check out my full blog <a href="#">here</a></p>
+        </div>
     </div>
+
+    <div class="break"></div>
 
     <div class="projects">
         <h1>PROJECTS</h1>
@@ -62,12 +89,15 @@
         <p>Check out my full portfolio <a href="#">here</a>.</p>
     </div>
 
+    <div class="break"></div>
+
     <div class="resume">
         <h1>RESUME</h1>
         <p> ** RESUME PREVIEW **</p>
         <p>This is my current resume. Click <a href="#">here</a> to view it, and <a href="#">here</a> to download a pdf copy.</p>
     </div>
 
+    <div class="break"></div>
 
     <div class="contact">
         <h1>CONTACT</h1>
@@ -76,6 +106,7 @@
         <p> ** CONNECTION LINKS AGAIN **</p> 
     </div>
 
+    <script src="js/script.js"></script>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 </body>
 </html>
