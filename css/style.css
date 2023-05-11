@@ -5,12 +5,12 @@
 
 .home{
     width: 100%;
-    background: url(../images/background.jpg) no-repeat;
-    background-color: rgba(0, 0, 0, 0.75);
-    background-blend-mode: multiply;
+    background: url(../images/background.jpg) no-repeat; 
+    background-color: rgba(0, 0, 0, 0.85); /* adds a black overlay to the background image */
+    background-blend-mode: multiply; /* allows for the black overlay to be seen */
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 100vh; /* vh -> viewport height */
 }
 
 .navbar{
@@ -48,11 +48,11 @@ ul li{
     margin-top: 17px;
     margin-left: 31px;
     margin-right: 31px;
-    list-style: none;
+    list-style: none; /* removes bullet points from menu items */
 }
 
 ul li a{
-    text-decoration: none;
+    text-decoration: none; /* removes underline from menu items */
     color: white;
     font-family: Arial;
     font-weight: bold;
@@ -60,7 +60,7 @@ ul li a{
 
 ul li a:hover{ /* hover effect -> changes menu item text to match logo color when hovered over */
     color: darkgoldenrod; 
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out; /* adds a smooth transition to the hover effect */
 }
 
 .home .content{
@@ -74,18 +74,18 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     font-weight: bold;
     width: max-content;
     margin: auto;
-    padding-top: 125px; /* pushes content down from top of background */
-    margin-top: 50px; /* pushes content down to avoid navbar */
+    padding-top: 165px; /* pushes content down from top of background */
 }
 
 .about p{
-    font-size: 20px;
+    font-size: 16px;
     font-family: Arial;
-    width: max-content;
-    padding: 15px;
-    margin: auto;
+    line-height: 25px;
+    width: 680px;
+    padding: 10px;
+    margin: auto; /* centers content */
     margin-top: 10px;
-    outline: 1px solid darkgoldenrod;
+    outline: 2px solid darkgoldenrod;
 }
 
 .connect {
@@ -100,18 +100,18 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     font-weight: bold;
     width: max-content;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .connect p{
     font-size: 20px;
     font-family: Arial;
     width: max-content;
-    padding: 15px;
+    padding: 10px;
     padding-bottom: 60px;
     margin: auto;
     margin-top: 10px;
-    outline: 1px solid darkgoldenrod;
+    outline: 2px solid darkgoldenrod;
 }
 
 .social {
@@ -133,16 +133,6 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
 
 .blog {
     background-color: red;
-}
-
-.blog h1{
-    color: darkgoldenrod;
-    font-size: 35px;
-    font-family: Arial;
-    font-weight: bold;
-    width: max-content;
-    margin: auto;
-    padding-top: 125px; /* pushes content down from top of background */
 }
 
 .resume {
