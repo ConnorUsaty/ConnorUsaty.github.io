@@ -5,22 +5,18 @@
 
 .main{
     width: 100%;
-    background: black;
+    background: url(../images/background.jpg) no-repeat;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
 
 .navbar{
-    width: 1200px;
+    background: black;
+    width: 100%;
     height: 75px;
-    margin-left: 100px;
-}
-
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
 }
 
 .logo{
@@ -30,14 +26,13 @@
     white-space: nowrap;
     font-size: 35px;
     font-family: Arial;
-    padding-top: 10px;
+    padding-top: 15px;
+    margin-left: 75px;
 }
 
 .menu{
-    width: 400px;
     float: left;
-    height: 70px;
-    margin-left: 600px;
+    height: 75px;
 }
 
 ul{
@@ -70,12 +65,60 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     color: white;
 }
 
+.about h1{
+    color: darkgoldenrod;
+    font-size: 35px;
+    font-family: Arial;
+    font-weight: bold;
+    width: max-content;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.about p{
+    font-size: 20px;
+    font-family: Arial;
+    width: max-content;
+    padding: 15px;
+    margin: auto;
+    margin-top: 10px;
+    outline: 1px solid darkgoldenrod;
+}
+
+.connect h1{
+    color: darkgoldenrod;
+    font-size: 35px;
+    font-family: Arial;
+    font-weight: bold;
+    width: max-content;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.connect p{
+    font-size: 20px;
+    font-family: Arial;
+    width: max-content;
+    padding: 15px;
+    padding-bottom: 60px;
+    margin: auto;
+    margin-top: 10px;
+    outline: 1px solid darkgoldenrod;
+}
+
+.social {
+    width: max-content;
+    margin: auto;
+    margin-top: -45px;
+}
+
 .social ion-icon{
     color: white;
-    font-size: 30px;
+    font-size: 35px;
+    margin-left: 15px;
 }
 
 .social ion-icon:hover{
     color: darkgoldenrod;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
