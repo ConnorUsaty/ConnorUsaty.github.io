@@ -5,7 +5,7 @@
 
 .home{
     width: 100%;
-    background: url(../images/background.jpg) no-repeat; 
+    background: url(../images/home.jpg) no-repeat; 
     background-color: rgba(0, 0, 0, 0.85); /* adds a black overlay to the background image */
     background-blend-mode: multiply; /* allows for the black overlay to be seen */
     background-position: center;
@@ -23,7 +23,7 @@
 }
 
 .logo{
-    color: darkgoldenrod;
+    color: white;
     font-size: 35px;
     font-family: Arial;
     font-weight: bold;
@@ -60,11 +60,7 @@ ul li a{
 
 ul li a:hover{ /* hover effect -> changes menu item text to match logo color when hovered over */
     color: darkgoldenrod; 
-    transition: 0.4s ease-in-out; /* adds a smooth transition to the hover effect */
-}
-
-.home .content{
-    color: white;
+    transition: 0.3s ease-in-out; /* adds a smooth transition to the hover effect */
 }
 
 .about h1{
@@ -74,23 +70,19 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
     font-weight: bold;
     width: max-content;
     margin: auto;
-    padding-top: 165px; /* pushes content down from top of background */
+    padding-top: 140px; /* pushes content down from top of background */
 }
 
 .about p{
-    font-size: 16px;
+    color: white;
+    font-size: 18px;
     font-family: Arial;
     line-height: 25px;
-    width: 680px;
+    width: 669px;
     padding: 10px;
     margin: auto;
     margin-top: 10px;
     outline: 2px solid darkgoldenrod;
-}
-
-.connect {
-    width: max-content;
-    margin: auto;
 }
 
 .connect h1{
@@ -104,6 +96,7 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
 }
 
 .connect p{
+    color: white;
     font-size: 20px;
     font-family: Arial;
     width: max-content;
@@ -128,20 +121,77 @@ ul li a:hover{ /* hover effect -> changes menu item text to match logo color whe
 
 .social ion-icon:hover{
     color: darkgoldenrod;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.break{
+    width: 100%;
+    height: 50px;
+    background-color: black;
 }
 
 .blog {
-    background-color: red;
+    width: 100%;
+    background: url(../images/blogBack.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* adds a black overlay to the background image */
+    background-blend-mode: multiply; /* allows for the black overlay to be seen */
+    height: 100vh; /* vh -> viewport height */
 }
 
-.resume {
-    background-color: orange;
+.blog h1{
+    color: rgb(114, 166, 105);
+    font-size: 35px;
+    font-family: Arial;
+    font-weight: bold;
+    width: max-content;
+    margin: auto;
+    margin-bottom: -5px;
+    padding-top: 15px; /* pushes content down from top of background */
+}
+
+.blog p{
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 25px;
+    width: 845px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: 0 0 6px rgba(255,255,255,1);
+}
+
+.glass {
+    width: 715px;
+    height: 390px;
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: 0 0 11px rgba(255,255,255,1);
+    background-image: url(../images/blogBack.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.blog ion-icon{
+    color: white;
+    font-size: 20px;
+}
+
+.blog ion-icon:hover{
+    color: rgb(57, 221, 24);
+    transition: 0.2s ease-in-out;
 }
 
 .projects {
+    background-color: orange;
+}
+
+.resume {
     background-color: yellow;
 }
+
 
 .contact{
     background-color: green;
