@@ -282,7 +282,7 @@ ul li a{
     background: url(../images/projects.jpg);
     background-position: center;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: multiply;
     width: 100%;
     height: 100vh;
@@ -295,14 +295,35 @@ ul li a{
     font-weight: bold;
     width: max-content;
     margin: auto;
-    padding-top: 60px;
+    padding-top: 55px;
+}
+
+.projects .description p{
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    width: max-content;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.projects .description a{
+    color: white;
+    text-decoration: underline;
+    transition: 0.2s ease;
+}
+
+.projects .description a:hover{
+    color: rgb(9, 112, 147);
 }
 
 .projects .column{
-    margin-top: 50px;
+    margin-top: 10px;
     float: left;
     width: 50%;
-    height: 500px;
+    height: 270px;
+    outline: 1px solid white;
 }
 
 .projects .column p{

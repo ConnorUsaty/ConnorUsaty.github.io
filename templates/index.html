@@ -4,7 +4,7 @@
 <head> 
     <meta charset="UTF-8"> 
     <title>Connor Usaty's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css" />
 </head>
 
 <body>
@@ -14,8 +14,8 @@
 
             <div class="menu">
                 <ul>
-                    <li class="menuhome"><a href="#">HOME</a></li>
-                    <li class="menublog"><a href="#">BLOG</a></li>
+                    <li class="menuhome"><a href="/home">HOME</a></li>
+                    <li class="menublog"><a href="/blog">BLOG</a></li>
                     <li class="menuprojects"><a href="#">PROJECTS</a></li>
                 </ul>
             </div>
@@ -82,18 +82,25 @@
 
     <div class="projects">
         <h1>PROJECTS</h1>
-        <p>These are some of the projects I have worked on. Click on any of them to see the full project.</p>
+
+        <div class="description">
+            <p>Here are some of my favourite projects. Click on any of them to see the full project or click <a href="#">here</a> to see my full portfolio.</p>
+        </div>
 
         <div class="row">
-            <div class="column"><p>COLUMN 1</p></div>
-            <div class="column"><p>COLUMN 2</p></div>
+            <div class="column"><p>This Website</p></div>
+            <div class="column"><p>Soduko Game &amp Solver</p></div>
+        </div>
+
+        <div class="row">
+            <div class="column"><p>Minesweeper</p></div>
+            <div class="column"><p>Robotic Arm Control Program</p></div>
         </div>
         
         <!--<p> ** EACH PROJECT IN TITLED BOX, VIDEO / IMAGE SHOWING OFF PROJECT ** -Maybe have link to github and full description each under project?</p>-->
-        <p>Check out my full portfolio <a href="#">here</a>.</p>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="static/js/script.js"></script>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 </body>
 </html>
