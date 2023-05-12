@@ -243,7 +243,7 @@ ul li a{
 }
 
 .active, .dot:hover{
-    background-color: #232323;
+    background-color: #323131;
 }
 
 /* Fading animation */
@@ -296,4 +296,25 @@ ul li a{
     width: max-content;
     margin: auto;
     padding-top: 60px;
+}
+
+.projects .column{
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+
+.projects .column p{
+    color: white;
+    font-size: 35px;
+    width: max-content;
+    margin: auto;
+}
+
+/* Clear floats after the columns */
+.projects .row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
