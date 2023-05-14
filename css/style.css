@@ -1,43 +1,20 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial;
-}
-
-.home{
-    background: url(../images/home.jpg);
-    background-color: rgba(0, 0, 0, 0.85); /* adds a black overlay to the background image */
-    background-blend-mode: multiply; /* allows for the black overlay to be seen */
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh; /* vh -> viewport height */
 }
 
 .navbar{
-    background: black; 
     width: 100%;
-    height: 50px; 
-    position: fixed; /* keeps navbar at the top of the page */
-    top: 0; /* keeps navbar at the top of the page */
-    z-index: 1; /* keeps navbar in front of other elements */
+    height: 35px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
-.logo{
-    color: white;
-    font-size: 35px;
-    font-family: Arial;
-    font-weight: bold;
-    margin-top: 4px;
-    margin-left: 75px;
-    float: left;
-    user-select: none;
-}
-
-.menu{
-    height: 50px;
+.navbar .items{
     width: max-content;
-    margin: auto; /* centers menu */
+    margin: auto;
 }
 
 ul{
@@ -47,9 +24,10 @@ ul{
 
 ul li{
     font-size: 14px;
-    margin-top: 17px;
-    margin-left: 31px;
-    margin-right: 31px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 31px;
+    padding-right: 31px;
     list-style: none; /* removes bullet points from menu items */
 }
 
@@ -62,284 +40,106 @@ ul li a{
     user-select: none;
 }
 
-.menuhome a:hover{
-    color: darkgoldenrod;
+.landing{
+    width: 100%;
+    height: min-content;
+    background-color: black
 }
 
-.menublog a:hover{
-    color: rgb(114, 166, 105);
+
+.landing h1{
+    color: rgb(17, 183, 186);
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 250px;
 }
 
-.menuprojects a:hover{
-    color: rgb(9, 112, 147);
+.landing h2{
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 354px;
+}
+
+.about{
+    width: 100%;
+    background-color: rgb(17, 183, 186);
 }
 
 .about h1{
-    color: darkgoldenrod;
-    font-size: 35px;
+    color: black;
     font-family: Arial;
     font-weight: bold;
-    width: max-content;
-    margin: auto;
-    padding-top: 140px; /* pushes content down from top of background */
+    font-size: 60px;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .about p{
-    color: white;
-    font-size: 18px;
+    color: black;
     font-family: Arial;
-    line-height: 25px;
-    width: 669px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 10px;
-    outline: 2px solid darkgoldenrod;
-}
-
-.connect h1{
-    color: darkgoldenrod;
-    font-size: 35px;
-    font-family: Arial;
-    font-weight: bold;
-    width: max-content;
-    margin: auto;
-    margin-top: 100px;
-}
-
-.connect p{
-    color: white;
+    width: 60%;
     font-size: 20px;
-    font-family: Arial;
-    width: max-content;
-    padding: 10px;
-    padding-bottom: 60px;
     margin: auto;
-    margin-top: 10px;
-    outline: 2px solid darkgoldenrod;
+    padding-top: 20px;
+    padding-bottom: 70px;
 }
 
-.social{
-    width: max-content;
-    margin: auto;
-    margin-top: -45px;
-}
-
-.social ion-icon{
-    color: white;
-    font-size: 35px;
-    margin-left: 20px;
-    transition: 0.2s ease;
-    user-select: none;
-}
-
-.social ion-icon:hover{
-    color: darkgoldenrod;
-}
-
-.break{
+.skills{
     width: 100%;
-    height: 50px;
+    height: min-content;
     background-color: black;
 }
 
-.blog{
-    background: url(../images/blogBack.jpg);
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6); /* adds a black overlay to the background image */
-    background-blend-mode: multiply; /* allows for the black overlay to be seen */
-    width: 100%;
-    height: 100vh; /* vh -> viewport height */
-}
-
-.blog h1{
-    color: rgb(114, 166, 105);
-    font-size: 35px;
+.skills h1{
+    color: rgb(17, 183, 186);
     font-family: Arial;
     font-weight: bold;
-    width: max-content;
-    margin: auto;
-    margin-bottom: -5px;
-    padding-top: 15px; /* pushes content down from top of background */
-}
-
-.blog .description{
-    color: white;
-    font-size: 18px;
-    font-family: Arial;
-    line-height: 25px;
-    width: 845px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 25px;
-    box-shadow: 0 0 6px rgba(255,255,255,1);
-}
-
-.blog .preview{
-    width: 715px;
-    height: 400px;
-    margin: auto;
-    margin-top: 25px;
-    box-shadow: 0 0 12px rgba(255,255,255,1);
-    background-image: url(../images/blogBack.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.mySlides{
-    color: white;
-    font-size: 20px;
-    font-family: Arial;
+    font-size: 60px;
     text-align: center;
-    width: 85%;
-    height: 100%;
-    line-height: 400px; /* centers text vertically */
-    margin: auto;
-}
-
-/* centers text vertically if there is multiple lines*/
-.mySlides p{
-    line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-/* Next & previous buttons */
-.next, .prev{
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    position: absolute;
-    top: 1150px; /* positions buttons in the middle of the image */
-    margin-top: -22px;
-    padding: 16px;
-    border-radius: 0 3px 3px 0; /* rounded corners */
-    transition: 0.6s ease; 
-    user-select: none; /* prevents user from selecting text */
-}
-  
-/* Position the "next button" to the right */
-.next{
-    margin-left: 673.5px; 
-    border-radius: 3px 0 0 3px;
-}
-  
-/* On hover, add a black background color with a little bit see-through */
-.next:hover, .prev:hover{
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot{
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    user-select: none;
-}
-
-.active, .dot:hover{
-    background-color: #323131;
-}
-
-/* Fading animation */
-.fade{
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade{
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-.blog .redirect{
-    color: white;
-    font-size: 18px;
-    font-family: Arial;
-    width: max-content;
-    padding: 10px;
-    margin: auto;
-    margin-top: 15px;
-    box-shadow: 0 0 6px rgba(255,255,255,1);
-}
-
-.blog .redirect a{
-    color: white;
-    text-decoration: underline;
-    transition: 0.2s ease;
-}
-
-.blog .redirect a:hover{
-    color: rgb(114, 166, 105);
-}
-
-.projects{
-    background: url(../images/projects.jpg);
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.7);
-    background-blend-mode: multiply;
-    width: 100%;
-    height: 100vh;
-}
-
-.projects h1{
-    color: rgb(9, 112, 147);
-    font-size: 35px;
-    font-family: Arial;
-    font-weight: bold;
-    width: max-content;
-    margin: auto;
-    padding-top: 55px;
-}
-
-.projects .description p{
-    color: white;
-    font-size: 18px;
-    font-family: Arial;
-    width: max-content;
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.projects .description a{
-    color: white;
-    text-decoration: underline;
-    transition: 0.2s ease;
-}
-
-.projects .description a:hover{
-    color: rgb(9, 112, 147);
-}
-
-.projects .column{
-    margin-top: 10px;
-    float: left;
-    width: 50%;
-    height: 270px;
+    padding-top: 50px;
     outline: 1px solid white;
 }
 
-.projects .column p{
-    color: white;
-    font-size: 35px;
-    width: max-content;
-    height: 270px;
-    background-color: black;
-    border-radius: 15px;
-    margin: auto;
+.row {
+    display: flex;
 }
 
-/* Clear floats after the columns */
-.projects .row:after {
-    content: "";
-    display: table;
-    clear: both;
+.skill{
+    width: 33.33%;
+    height: 500px;
+    background-color: black;
+    outline: 1px solid red;
+}
+
+.skill h2{
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline: 1px solid white;
+}
+
+.skill ul{
+    list-style: none;
+    width: 100%;
+    outline: 1px solid white;
+    display: list-item;
+    text-align: center;
+}
+
+.skill li{
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
 }

@@ -8,99 +8,68 @@
 </head>
 
 <body>
-    <div class="home">
-        <div class="navbar">
-            <h2 class="logo">C||U</h2>
-
-            <div class="menu">
-                <ul>
-                    <li class="menuhome"><a href="#">HOME</a></li>
-                    <li class="menublog"><a href="#">BLOG</a></li>
-                    <li class="menuprojects"><a href="#">PROJECTS</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="about">
-                <h1>ABOUT</h1>
-                <p>Hi I'm Connor, a second year Computer Engineering student at McMaster University with a passion for problem-solving and software development. Over the next few months I plan to build this website. It will serve as an opportunity to challenge  and improve my web development skills as well as provide me a place to showcase my work and projects. Join me on this learning journey by connecting with me below.</p>
-            </div>
-
-            <div class="connect">
-                <h1>CONNECT</h1>
-                <p>Connect with me to stay updated on all my recent work!</p>
-
-                <div class="social">
-                    <a href="https://github.com/ConnorUsaty"><ion-icon name="logo-github"></ion-icon></a>
-                    <a href="https://www.linkedin.com/in/connor-usaty/"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="https://www.instagram.com/c.usaty07/"><ion-icon name="logo-instagram"></ion-icon></a>
-                </div>
-            </div>
+    <div class="navbar">
+        <div class="items">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
     </div>
 
-    <div class="break"></div>
-
-    <div class="blog">
-        <h1>BLOG</h1>
-
-        <div class="description">
-            <p>The goal of this blog is to document my daily programming ventures and what I have learned from them. Whether that be an update to my website, a new technology I'm learning or a Leetcode problem that I solved. Join me as I explore new technologies and techniques, and strive to become a better programmer.</p>
-        </div>
-
-        <div class="preview">
-            <div class="mySlides fade">
-                <p>BLOG POST 1</p>
-            </div>
-            
-            <div class="mySlides fade">
-                <p>BLOG POST 2</p>
-            </div>
-            
-            <div class="mySlides fade">
-                <p>BLOG POST 3</p>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-            
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-        <div class="redirect">
-            <p>Check out my full blog <a href="#">here</a></p>
+    <div class="landing">
+        <div class="landing-text">
+            <h1>Connor Usaty</h1>
+            <h2>Software Engineer</h2>
         </div>
     </div>
 
-    <div class="break"></div>
+    <div class="about">
+        <h1>About</h1>
+        <p>Hi, I'm Connor. I enter my third year of Computer Engineering at McMaster University this fall. I have a passion for learning new technologies and applying them to solve problems.</p>
+    </div>
 
-    <div class="projects">
-        <h1>PROJECTS</h1>
-
-        <div class="description">
-            <p>Here are some of my favourite projects. Click on any of them to see the full project or click <a href="#">here</a> to see my full portfolio.</p>
-        </div>
-
+    <div class="skills">
+        <h1>Skills</h1>
         <div class="row">
-            <div class="column"><p>This Website</p></div>
-            <div class="column"><p>Soduko Game &amp Solver</p></div>
+        <div class="skill">
+            <h2>Programming Languages</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
         </div>
 
-        <div class="row">
-            <div class="column"><p>Minesweeper</p></div>
-            <div class="column"><p>Robotic Arm Control Program</p></div>
+        <div class="skill">
+            <h2>Frameworks</h2>
+            <ul>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Flask</li>
+                <li>Bootstrap</li>
+            </ul>
         </div>
-        
-        <!--<p> ** EACH PROJECT IN TITLED BOX, VIDEO / IMAGE SHOWING OFF PROJECT ** -Maybe have link to github and full description each under project? Also live link?</p>-->
+        <div class="skill">
+            <h2>Tools</h2>
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Visual Studio Code</li>
+                <li>PyCharm</li>
+                <li>Eclipse</li>
+            </ul>
+        </div>
+    </div>
     </div>
 
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 </body>
 </html>
