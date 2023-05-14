@@ -330,6 +330,9 @@ ul li a{
     color: white;
     font-size: 35px;
     width: max-content;
+    height: 270px;
+    background-color: black;
+    border-radius: 15px;
     margin: auto;
 }
 
