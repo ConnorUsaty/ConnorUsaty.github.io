@@ -1,149 +1,160 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .navbar{
-    width: 100%;
-    height: 35px;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+  width: 100%;
+  height: 35px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .navbar .items{
-    width: max-content;
-    margin: auto;
+  width: max-content;
+  margin: auto;
 }
 
 ul{
-    float: left;
-    display: flex; /* flexbox -> allows for flexing of items in the menu */
+  float: left;
+  display: flex; /* flexbox -> allows for flexing of items in the menu */
 }
 
 ul li{
-    font-size: 14px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 31px;
-    padding-right: 31px;
-    list-style: none; /* removes bullet points from menu items */
+  font-size: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 31px;
+  padding-right: 31px;
+  list-style: none; /* removes bullet points from menu items */
 }
 
 ul li a{
-    text-decoration: none; /* removes underline from menu items */
-    color: white;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.3s ease;
-    user-select: none;
+  text-decoration: none; /* removes underline from menu items */
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.3s ease;
+  user-select: none;
 }
 
-#landing{
-    width: 100%;
-    height: min-content;
-    background-color: black
+.landing-text{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
 }
 
-
-#landing h1{
-    color: rgb(17, 183, 186);
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-    padding-top: 250px;
-}
-
-#landing h2{
-    color: white;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    padding-bottom: 354px;
+/* ---- particles.js container ---- */
+#particles-js{
+  width: 100%;
+  height: 100vh;
+  background-color: #2e314d;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #about{
-    width: 100%;
-    background-color: rgb(17, 183, 186);
+  width: 100%;
+  background-color: rgb(17, 183, 186);
+  justify-content: center;
+  z-index: 10;
 }
 
 #about h1{
-    color: black;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-    padding-top: 50px;
+  color: black;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 50px;
 }
 
 #about p{
-    color: black;
-    font-family: Arial;
-    width: 60%;
-    font-size: 20px;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 70px;
+  color: black;
+  font-family: Arial;
+  width: 60%;
+  font-size: 20px;
+  margin: auto;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+#about button{
+  font-size: 18px;
+  min-height: 40px;
+  padding: 15px;
+  border-radius: 25px;
+  outline: 0px;
+  transition: 0.3s ease;
+}
+
+#about button:hover{
+  background-color: rgb(17, 183, 186);
+}
+
+#about a{
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
+  user-select: none;
 }
 
 #skills{
-    width: 100%;
-    height: min-content;
-    background-color: black;
+  width: 100%;
+  height: min-content;
+  background-color: black;
 }
 
 #skills h1{
-    color: rgb(17, 183, 186);
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
-    padding-top: 50px;
-    outline: 1px solid white;
+  color: rgb(17, 183, 186);
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 50px;
+  outline: 1px solid white;
 }
 
 .row {
-    display: flex;
+  display: flex;
 }
 
 .skill{
-    width: 33.33%;
-    height: 500px;
-    background-color: black;
-    outline: 1px solid red;
+  width: 33.33%;
+  height: 500px;
+  background-color: black;
+  outline: 1px solid red;
 }
 
 .skill h2{
-    color: white;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    outline: 1px solid white;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: 1px solid white;
 }
 
 .skill ul{
-    list-style: none;
-    width: 100%;
-    outline: 1px solid white;
-    display: list-item;
-    text-align: center;
+  list-style: none;
+  width: 100%;
+  outline: 1px solid white;
+  display: list-item;
+  text-align: center;
 }
 
 .skill li{
-    color: white;
-    font-family: Arial;
-    font-size: 20px;
+  color: white;
+  font-family: Arial;
+  font-size: 20px;
 }
