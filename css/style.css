@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .navbar{
     width: 100%;
     height: 35px;
@@ -40,14 +44,14 @@ ul li a{
     user-select: none;
 }
 
-.landing{
+#landing{
     width: 100%;
     height: min-content;
     background-color: black
 }
 
 
-.landing h1{
+#landing h1{
     color: rgb(17, 183, 186);
     font-family: Arial;
     font-weight: bold;
@@ -56,7 +60,7 @@ ul li a{
     padding-top: 250px;
 }
 
-.landing h2{
+#landing h2{
     color: white;
     font-family: Arial;
     font-weight: bold;
@@ -67,12 +71,12 @@ ul li a{
     padding-bottom: 354px;
 }
 
-.about{
+#about{
     width: 100%;
     background-color: rgb(17, 183, 186);
 }
 
-.about h1{
+#about h1{
     color: black;
     font-family: Arial;
     font-weight: bold;
@@ -81,7 +85,7 @@ ul li a{
     padding-top: 50px;
 }
 
-.about p{
+#about p{
     color: black;
     font-family: Arial;
     width: 60%;
@@ -91,13 +95,13 @@ ul li a{
     padding-bottom: 70px;
 }
 
-.skills{
+#skills{
     width: 100%;
     height: min-content;
     background-color: black;
 }
 
-.skills h1{
+#skills h1{
     color: rgb(17, 183, 186);
     font-family: Arial;
     font-weight: bold;
