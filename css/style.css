@@ -21,6 +21,11 @@ html{
   width: max-content;
   margin: auto;
   user-select: none;
+  transition: 0.3s ease;
+}
+
+.navbar .items a:hover{
+  color: springgreen;
 }
 
 ul{
@@ -46,6 +51,14 @@ ul li a{
   user-select: none;
 }
 
+/* ---- particles.js container ---- */
+#particles-js{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+}
+
 .landing-text{
   color: springgreen;
   font-size: 30px;
@@ -56,17 +69,10 @@ ul li a{
   user-select: none;
 }
 
-/* ---- particles.js container ---- */
-#particles-js{
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  background-size: cover;
-}
-
 #about{
   width: 100%;
-  background-color: springgreen;
+  background: rgb(0,255,127);
+  background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgba(0,0,0,0.95) 100%);
   justify-content: center;
 }
 
@@ -84,17 +90,19 @@ ul li a{
   font-size: 20px;
   margin: auto;
   padding-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 #about button{
-  background-color: black;
+  background: rgb(0,255,127);
+  background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgba(0,0,0,0.94) 100%);
   color: white;
   font-size: 18px;
   min-height: 40px;
   padding: 15px;
   border-radius: 25px;
   transition: 0.4s ease;
+  margin-bottom: 40px;
 }
 
 #about button:hover{
@@ -113,6 +121,7 @@ ul li a{
   width: 100%;
   height: min-content;
   background-color: black;
+  padding-bottom: 50px;
 }
 
 #skills h1{
@@ -122,42 +131,35 @@ ul li a{
   font-size: 60px;
   text-align: center;
   padding-top: 50px;
-  outline: 1px solid white;
+  margin-bottom: 30px;
 }
 
-.row {
-  display: flex;
+.container{
+  background: rgb(0,255,127);
+  background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgba(0,0,0,0.90) 100%);
+  width: min-content;
+  height: min-content;
+  margin: auto;
+  border-radius: 25px;
 }
 
 .skill{
-  width: 33.33%;
-  height: 500px;
-  background-color: black;
-  outline: 1px solid red;
-}
-
-.skill h2{
-  color: white;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
+  display: flex;
+  width: 600px;
+  justify-content: space-evenly;
+  height: min-content;
   margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  outline: 1px solid white;
 }
 
 .skill ul{
   list-style: none;
   width: 100%;
-  outline: 1px solid white;
-  display: list-item;
-  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  justify-content: space-evenly;
 }
 
-.skill li{
-  color: white;
-  font-family: Arial;
-  font-size: 20px;
+.skill img{
+  height: 75px;
+  margin-left: 10px;
 }
