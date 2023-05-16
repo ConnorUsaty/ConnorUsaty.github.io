@@ -7,48 +7,123 @@ html{
   scroll-behavior: smooth;
 }
 
-.navbar{
-  width: 100%;
-  height: 35px;
-  background-color: black;
-  opacity: 0.75;
+header{
   position: fixed;
   top: 0;
   z-index: 1;
+  width: 100%;
+  background-color: black;
+  opacity: 0.75;
 }
 
-.navbar .items{
+.container{
+  width: 1600px;
+  margin: auto;
+}
+
+.subcontainer{
+  width: 85%;
+  margin: auto;
+}
+
+.navbar{
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.nav-branding{
+  color: springgreen;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: -5px;
+  user-select: none;
+}
+
+.nav-menu{
+  display: flex;
   width: max-content;
   margin: auto;
-  user-select: none;
-  transition: 0.3s ease;
+  gap: 60px;
 }
 
-.navbar .items a:hover{
-  color: springgreen;
-}
-
-ul{
-  float: left;
-  display: flex; /* flexbox -> allows for flexing of items in the menu */
-}
-
-ul li{
-  font-size: 14px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 31px;
-  padding-right: 31px;
+.nav-item{
   list-style: none; /* removes bullet points from menu items */
 }
 
-ul li a{
+.nav-link{
   text-decoration: none; /* removes underline from menu items */
   color: white;
+  font-size: 15px;
   font-family: Arial;
   font-weight: bold;
-  transition: 0.3s ease;
+  transition: 0.35s ease;
   user-select: none;
+}
+
+.nav-link:hover{
+  color: springgreen;
+}
+
+@media(max-width: 1600px){
+  .container{
+    width: 100%;
+  }
+}
+
+@media(max-width: 1024px) {
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    opacity: 0.75;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item{
+    margin: 18px 0;
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
 }
 
 /* ---- particles.js container ---- */
@@ -119,6 +194,7 @@ ul li a{
   margin-bottom: 50px;
   border-radius: 25px;
   outline: 2px solid springgreen;
+  justify-content: center;
 }
 
 .skill{
@@ -130,10 +206,10 @@ ul li a{
 }
 
 .skill ul{
+  display: flex;
   list-style: none;
   width: 100%;
-  margin: auto;
-  margin-top: 25px;
+  margin: 25px auto;
   justify-content: space-evenly;
 }
 
@@ -157,5 +233,6 @@ ul li a{
 #skills a:hover{
   background: rgb(0,255,127);
   background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgb(11, 211, 221) 100%); 
+  color: white;
   cursor: pointer;
 }
