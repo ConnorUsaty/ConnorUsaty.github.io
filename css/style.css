@@ -13,7 +13,7 @@ header{
   z-index: 1;
   width: 100%;
   background-color: black;
-  opacity: 0.75;
+  opacity: 0.8;
 }
 
 .container{
@@ -88,6 +88,10 @@ header{
 }
 
 @media(max-width: 1024px) {
+  .navbar{
+    min-height: 100px;
+  }
+
   .hamburger{
     display: block;
   }
@@ -107,22 +111,26 @@ header{
   .nav-menu{
     position: fixed;
     left: -100%;
-    top: 50px;
-    gap: 0;
+    top: 100px;
     flex-direction: column;
     background-color: black;
-    opacity: 0.75;
     width: 100%;
     text-align: center;
     transition: 0.3s;
-  }
-
-  .nav-item{
-    margin: 18px 0;
+    height: min-content;
+    padding-bottom: 15px;
+    justify-content: space-evenly;
+    z-index: 1;
   }
 
   .nav-menu.active{
     left: 0;
+  }
+
+  .nav-link{
+      font-size: 20px;
+      font-family: Arial;
+      font-weight: bold;
   }
 }
 
@@ -135,7 +143,7 @@ header{
 }
 
 .landing-text{
-  color: springgreen;
+  color: rgb(0,255,127);
   font-size: 30px;
   width: 100%;
   text-align: center;
@@ -146,8 +154,8 @@ header{
 
 #about{
   width: 100%;
-  background: rgb(0,255,127);
-  background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgba(0,0,0,1) 100%);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(0,0,0,1) 100%);
   justify-content: center;
 }
 
@@ -187,16 +195,6 @@ header{
   margin-bottom: 30px;
 }
 
-.skills-container{
-  width: min-content;
-  height: min-content;
-  margin: auto;
-  margin-bottom: 50px;
-  border-radius: 25px;
-  outline: 2px solid springgreen;
-  justify-content: center;
-}
-
 .skill{
   display: flex;
   width: 600px;
@@ -218,6 +216,12 @@ header{
   margin-left: 10px;
 }
 
+.links{
+  width: max-content;
+  margin: auto;
+  margin-top: 50px;
+}
+
 #skills a{
   background-color: springgreen;
   color: black;
@@ -226,6 +230,8 @@ header{
   font-weight: bold;
   padding: 15px 25px;
   border-radius: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
   transition: 0.5s ease;
   user-select: none;
 }
