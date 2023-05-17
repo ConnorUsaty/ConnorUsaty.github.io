@@ -242,3 +242,37 @@ header{
 .links a:hover{
   color: white
 }
+
+#projects{
+  width: 100%;
+  height: min-content;
+  background-color: black;
+  padding-bottom: 55px;
+}
+
+#projects h1{
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+.project-row{
+  display: flex;
+  outline: 1px solid springgreen;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.project{
+  color: white;
+  display: column;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  outline: 1px solid white;
+}
