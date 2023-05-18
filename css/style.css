@@ -251,7 +251,7 @@ header{
 }
 
 #projects h1{
-  color: white;
+  color: springgreen;
   font-family: Arial;
   font-weight: bold;
   font-size: 60px;
@@ -262,17 +262,31 @@ header{
 
 .project-row{
   display: flex;
-  outline: 1px solid springgreen;
   align-items: center;
-  justify-content: space-between;
   margin-top: 35px;
 }
 
 .project{
-  color: white;
-  display: column;
+  color: black;
+  background-color: white;
   text-align: center;
-  width: 600px;
+  width: 400px;
+  height: 350px;
   margin: auto;
-  outline: 1px solid white;
+  border-radius: 25px;
+}
+
+.project img{
+  width: 100%;
+}
+
+.project-tech ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.project-tech img{
+  height: 50px;
 }
