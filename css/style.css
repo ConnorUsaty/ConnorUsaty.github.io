@@ -1,6 +1,8 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman';
 }
 
 html{
@@ -10,7 +12,7 @@ html{
 header{
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 9999;
   width: 100%;
   background-color: black;
   opacity: 0.8;
@@ -75,10 +77,29 @@ header{
   font-weight: bold;
   transition: 0.35s ease;
   user-select: none;
+  position: relative;
 }
 
 .nav-link:hover{
   color: springgreen;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: springgreen;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media(max-width: 1600px){
@@ -153,71 +174,7 @@ header{
   user-select: none;
 }
 
-#about{
-  width: 100%;
-  background: rgb(0,255,127);
-  background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgb(11, 211, 221) 100%); 
-  justify-content: center;
-}
-
-#about h1{
-  color: black;
-  font-weight: bold;
-  font-size: 60px;
-  text-align: center;
-  padding-top: 50px;
-}
-
-#about p{
-  color: black;
-  width: 60%;
-  font-size: 20px;
-  font-weight: bold;
-  margin: auto;
-  margin-top: 25px;
-  padding-bottom: 60px;
-}
-
-
-#skills{
-  width: 100%;
-  height: min-content;
-  background-color: black;
-  padding-bottom: 55px;
-}
-
-#skills h1{
-  color: springgreen;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 60px;
-  text-align: center;
-  padding-top: 50px;
-  margin-bottom: 30px;
-}
-
-.skill{
-  display: flex;
-  width: 600px;
-  justify-content: space-evenly;
-  height: min-content;
-  margin: auto;
-}
-
-.skill ul{
-  display: flex;
-  list-style: none;
-  width: 100%;
-  margin: auto;
-  margin-top: 20px;
-  justify-content: space-evenly;
-}
-
-.skill img{
-  height: 75px;
-}
-
-.links{
+.landing-text .links {
   display: flex;
   width: max-content;
   padding: 20px;
@@ -225,68 +182,236 @@ header{
   background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgb(11, 211, 221) 100%);
   border-radius: 50px;
   margin: auto;
-  margin-top: 55px;
+  margin-top: 30px;
   justify-content: center;
   align-items: center;
   gap: 65px;
 }
 
-.links a{
+.landing-text .links i {
   color: black;
   text-decoration: none;
   font-size: 45px;
   font-weight: bold;
-  transition: 0.3s ease;
+  transition: 0.25s ease;
 }
 
-.links a:hover{
-  color: white
+.landing-text .links i:hover{
+  scale: 1.1;
 }
 
-#projects{
+#about{
   width: 100%;
-  height: min-content;
-  background-color: black;
-  padding-bottom: 55px;
+  background: rgb(0,255,127);
+  background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgb(11, 211, 221) 100%); 
+  justify-content: center;
+  padding: 50px 0;
 }
 
-#projects h1{
-  color: springgreen;
-  font-family: Arial;
+#about h1{
+  color: black;
   font-weight: bold;
   font-size: 60px;
   text-align: center;
-  padding-top: 50px;
-  margin-bottom: 30px;
 }
 
-.project-row{
-  display: flex;
-  align-items: center;
-  margin-top: 35px;
-}
-
-.project{
+#about p{
   color: black;
-  background-color: white;
-  text-align: center;
-  width: 400px;
-  height: 350px;
+  width: 60%;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
   margin: auto;
-  border-radius: 25px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-.project img{
+#about a {
+  color: black;
+}
+
+#projects {
   width: 100%;
+  background-color: #000;
+  padding: 50px 0;
 }
 
-.project-tech ul{
-  list-style: none;
+#projects h1 {
+  color: springgreen;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+}
+
+.project-row {
+  width: 90%;
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  justify-content: space-between;
+  margin: 40px auto;
 }
 
-.project-tech img{
-  height: 50px;
+.project {
+  width: 45%;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.project:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("project1-image.jpg");
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+.project h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.project-links {
+  position: relative;
+  z-index: 1;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: rgb(0,255,127);
+  background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgb(11, 211, 221) 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.project-links a:hover {
+  scale: 1.1;
+}
+
+.tech-stack {
+  margin-top: 10px;
+}
+
+.tech-stack img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#contact {
+  width: 100%;
+  background-color: #000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact h1 {
+  color: springgreen;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+}
+
+#contact p {
+  color: #fff;
+}
+
+.contact-info {
+  line-height: 1.5;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  color: #fff;
+}
+
+.contact-info a {
+  color: springgreen;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 50px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.contact-form label {
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: springgreen;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin: auto;
+  display: block;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #32CD32;
+}
+
+/* Optional: Add additional styling to improve aesthetics */
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: springgreen;
 }
