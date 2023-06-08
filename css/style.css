@@ -221,9 +221,8 @@ header{
 #about p{
   color: black;
   width: 60%;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
-  font-weight: bold;
   margin: auto;
   margin-top: 25px;
   margin-bottom: 10px;
@@ -318,27 +317,30 @@ header{
   color: springgreen;
   font-weight: bold;
   font-size: 60px;
-  text-align: center;
 }
 
 #contact p {
   color: #fff;
+  font-size: 22px;
+  line-height: 1.5;
 }
 
 .contact-info {
-  font-size: 22px;
-  line-height: 1.5;
-  margin-top: 25px;
+  width: max-content;
+  margin: auto;
+  text-align: left;
   margin-bottom: 20px;
 }
 
 .contact-info p {
+  text-align: left;
   color: #fff;
 }
 
 .contact-info a {
   color: springgreen;
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .contact-info a:hover {
@@ -380,8 +382,15 @@ header{
   height: 120px;
 }
 
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: springgreen;
+}
+
 .contact-form button[type="submit"] {
-  background-color: springgreen;
+  background: rgb(0,255,127);
+  background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgb(11, 211, 221) 100%);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -391,15 +400,10 @@ header{
   font-family: Arial, sans-serif;
   margin: auto;
   display: block;
+  transition: 0.2s ease;
 }
 
 .contact-form button[type="submit"]:hover {
-  background-color: #32CD32;
+  scale: 1.1;
 }
 
-/* Optional: Add additional styling to improve aesthetics */
-.contact-form input[type="email"]:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: springgreen;
-}
