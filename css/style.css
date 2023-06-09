@@ -246,14 +246,15 @@ header{
 }
 
 .project-row {
-  width: 90%;
+  width: clamp(300px, 90%, 1200px);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 40px auto;
 }
 
 .project {
-  width: 45%;
+  width: clamp(200px, 45%, 600px);
   padding: 20px;
   background-color: #fff;
   color: #000;
