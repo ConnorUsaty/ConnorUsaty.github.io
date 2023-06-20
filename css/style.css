@@ -108,7 +108,7 @@ header{
   }
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1000px) {
   .navbar{
     min-height: 100px;
   }
@@ -245,28 +245,23 @@ header{
   text-align: center;
 }
 
-.project-row {
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 40px auto;
-}
-
-@media(max-width: 900px) {
-  .project-row {
-    flex-direction: column;
-    outline: 4px solid red;
-  }
-}
-
 .project {
   width: 45%;
+  margin-top: 20px;
   padding: 20px;
   background-color: #fff;
   color: #000;
   border-radius: 8px;
   text-align: center;
+}
+
+.projects-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 40px;
 }
 
 .project h3 {
@@ -311,6 +306,16 @@ header{
   width: 35px;
   height: 35px;
   margin-right: 5px;
+}
+
+@media (max-width: 1150px) {
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+  }
 }
 
 #contact {
@@ -420,12 +425,4 @@ header{
 
 .contact-form button[type="submit"]:hover {
   scale: 1.1;
-}
-
-@media(max-width: 525px) {
-  .landing-text h1{
-    font-size: 2.5rem;
-    color: white;
-  }
-
 }
