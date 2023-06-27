@@ -27,12 +27,25 @@ This is my Personal Portfolio Website. It features an interactive home page, an 
   GitHub
 </a>
 
+**Polynomial Calculator:**
+<a href="https://github.com/ConnorUsaty/polynomial-calculator" target="_blank">
+  GitHub
+</a>
+
 **YouTube to MP3 Converter:**
+<a href="https://youtu.be/DWJEE19_Wj0" target="_blank">
+  Video Demo
+</a>
+ | 
 <a href="https://github.com/ConnorUsaty/youtube-to-mp3-converter" target="_blank">
   GitHub
 </a>
 
 **Sudoku Game & Visual Solver:**
+<a href="https://youtu.be/HdGePtq2ICA" target="_blank">
+  Video Demo
+</a>
+ |   
 <a href="https://github.com/ConnorUsaty/sudoku-solver" target="_blank">
   GitHub
 </a>  
