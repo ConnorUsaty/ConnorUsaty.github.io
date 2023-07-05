@@ -322,6 +322,12 @@ header{
   }
 }
 
+@media (max-width: 980px) {
+  .project-links a {
+    padding: 15px 20px;
+  }
+}
+
 #contact {
   width: 100%;
   background-color: #000;
@@ -407,7 +413,7 @@ header{
 
 .contact-info .contact-item {
   background-color: white;
-  width: 18%;
+  width: 22%;
   height: 130px;
   margin-top: 20px;
   color: black;
@@ -430,6 +436,16 @@ header{
 
 .contact-info .contact-item p {
   font-size: 17px;
+}
+
+@media screen and (max-width: 1150px) {
+  .contact-form {
+    width: 60%;
+  }
+
+  .contact-info .contact-item {
+    width: 25%;
+  }
 }
 
 @media screen and (max-width: 980px) {
