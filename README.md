@@ -45,7 +45,7 @@ This is my Personal Portfolio Website. It features an interactive home page, an 
 <a href="https://youtu.be/HdGePtq2ICA" target="_blank">
   Video Demo
 </a>
- |   
+ | 
 <a href="https://github.com/ConnorUsaty/sudoku-solver" target="_blank">
   GitHub
 </a>  
