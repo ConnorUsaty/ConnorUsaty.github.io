@@ -588,54 +588,47 @@ video {
   }
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-9 {
   margin-bottom: 2.25rem;
+}
+
+.flex {
+  display: flex;
 }
 
 .resize {
   resize: both;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.flex-row {
+  flex-direction: row;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.flex-col {
+  flex-direction: column;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.justify-center {
+  justify-content: center;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
 }
 
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 *{
@@ -960,7 +953,6 @@ header{
 .tech-stack img {
   width: 35px;
   height: 35px;
-  margin-right: 5px;
 }
 
 @media (max-width: 1150px) {
