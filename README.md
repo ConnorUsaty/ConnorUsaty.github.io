@@ -28,8 +28,8 @@ This is my Personal Portfolio Website. It features an interactive home page, an 
   GitHub
 </a>
 
-**Polynomial Calculator:**
-<a href="https://github.com/ConnorUsaty/polynomial-calculator" target="_blank">
+**3D Spatial Mapping Embedded System:**
+<a href="https://github.com/ConnorUsaty/2DX3-FinalProject-SpatialMappingSystem" target="_blank">
   GitHub
 </a>
 
