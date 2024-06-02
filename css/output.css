@@ -604,10 +604,6 @@ video {
   flex-direction: row;
 }
 
-.flex-col {
-  flex-direction: column;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -618,17 +614,19 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-solid {
-  border-style: solid;
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 *{
@@ -647,8 +645,7 @@ header{
   top: 0;
   z-index: 9999;
   width: 100%;
-  background-color: black;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .container{
@@ -684,7 +681,6 @@ header{
 }
 
 .nav-branding{
-  color: springgreen;
   font-size: 2rem;
   font-weight: bold;
   margin-top: -5px;
@@ -709,7 +705,6 @@ header{
 .nav-link{
   text-decoration: none;
   /* removes underline from menu items */
-  color: white;
   font-size: 15px;
   font-family: Arial;
   font-weight: bold;
