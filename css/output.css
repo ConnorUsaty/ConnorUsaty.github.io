@@ -614,9 +614,9 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.bg-white {
+.bg-gray-950 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
 }
 
 .text-7xl {
@@ -624,9 +624,9 @@ video {
   line-height: 1;
 }
 
-.text-black {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 *{
@@ -681,6 +681,7 @@ header{
 }
 
 .nav-branding{
+  color: springgreen;
   font-size: 2rem;
   font-weight: bold;
   margin-top: -5px;
