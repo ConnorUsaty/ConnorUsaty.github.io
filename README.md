@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-This is my Personal Portfolio Website. It features an interactive home page, an About section, a Contact section and showcases some of my favourite projects.
+This is my Personal Portfolio Website, where you can learn all about me. It showcases 4 of my favourite projects and some info about me.
 
 ## Website Link
 
