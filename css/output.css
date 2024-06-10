@@ -588,6 +588,10 @@ video {
   }
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mb-9 {
   margin-bottom: 2.25rem;
 }
@@ -596,8 +600,29 @@ video {
   display: flex;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
 }
 
 .resize {
@@ -616,6 +641,12 @@ video {
   justify-content: space-between;
 }
 
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -625,6 +656,10 @@ video {
 .bg-gray-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .py-1 {
@@ -641,18 +676,13 @@ video {
   text-align: center;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 
 .text-7xl {
   font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-5xl {
-  font-size: 3rem;
   line-height: 1;
 }
 
@@ -849,25 +879,16 @@ header{
 }
 
 .landing-text .links {
-  display: flex;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 20px;
   background: rgb(0,255,127);
   background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgb(11, 211, 221) 100%);
   border-radius: 50px;
-  margin: auto;
   margin-top: 35px;
-  justify-content: center;
-  align-items: center;
-  gap: 65px;
   pointer-events: all;
 }
 
 .landing-text .links i {
   color: black;
   text-decoration: none;
-  font-size: 45px;
   font-weight: bold;
   transition: 0.25s ease;
 }
@@ -875,6 +896,17 @@ header{
 .landing-text .links i:hover{
   scale: 1.1;
   color: white;
+}
+
+.scroll-down{
+  position: absolute;
+  bottom: 20px;
+  left: 49%;
+  color: springgreen;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 #about{

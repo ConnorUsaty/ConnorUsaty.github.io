@@ -170,24 +170,16 @@ header{
 }
 
 .landing-text .links {
-  display: flex;
-  width: max-content;
-  padding: 20px;
   background: rgb(0,255,127);
   background: radial-gradient(circle, rgba(0,255,127,1) 0%, rgb(11, 211, 221) 100%);
   border-radius: 50px;
-  margin: auto;
   margin-top: 35px;
-  justify-content: center;
-  align-items: center;
-  gap: 65px;
   pointer-events: all;
 }
 
 .landing-text .links i {
   color: black;
   text-decoration: none;
-  font-size: 45px;
   font-weight: bold;
   transition: 0.25s ease;
 }
@@ -195,6 +187,15 @@ header{
 .landing-text .links i:hover{
   scale: 1.1;
   color: white;
+}
+
+.scroll-down{
+  position: absolute;
+  bottom: 20px;
+  left: 49%;
+  color: springgreen;
+  cursor: pointer;
+  user-select: none;
 }
 
 #about{
