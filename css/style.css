@@ -218,6 +218,13 @@ header{
   color: black;
 }
 
+#experience h1 {
+  color: springgreen;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+}
+
 #projects {
   width: 100%;
   background-color: #000;
