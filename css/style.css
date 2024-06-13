@@ -225,6 +225,13 @@ header{
   text-align: center;
 }
 
+.job-card {
+  grid-area: revert;
+  backface-visibility: hidden;
+  box-shadow: inset 100px 0 4em 2em #212122;
+  filter: drop-shadow(5px 5px 3px #212122);
+}
+
 #projects {
   width: 100%;
   background-color: #000;
