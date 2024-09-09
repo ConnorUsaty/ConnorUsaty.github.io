@@ -19,6 +19,11 @@ This is my Personal Portfolio Website, where you can learn all about me. It show
 
 ## Projects Showcased
 
+**AI Sudoku Solver:**
+<a href="https://github.com/ConnorUsaty/AI-sudoku-solver" target="_blank">
+  GitHub
+</a> 
+
 **Pathfinding Algorithm Visualizer:**
 <a href="https://connorusaty.github.io/pathfinding-visualizer/" target="_blank">
   Website
@@ -40,13 +45,4 @@ This is my Personal Portfolio Website, where you can learn all about me. It show
  | 
 <a href="https://github.com/ConnorUsaty/youtube-to-mp3-converter" target="_blank">
   GitHub
-</a>
-
-**Sudoku Game & Visual Solver:**
-<a href="https://youtu.be/HdGePtq2ICA" target="_blank">
-  Video Demo
-</a>
- | 
-<a href="https://github.com/ConnorUsaty/sudoku-solver" target="_blank">
-  GitHub
-</a>  
+</a> 
