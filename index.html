@@ -70,6 +70,36 @@
       <!-- Container for Job / Experience Cards -->
       <div class="flex flex-col space-y-10 text-black">
 
+        <!-- Job Card 0 - Pure Storage -->
+        <div class="job-card w-9/12 m-auto p-10 rounded-lg" style="background-image: url(./icons/pure_storage_bckrnd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+
+          <!-- Content Row of Two Content Columns -->
+          <div class="flex flex-row items-start">
+
+            <!-- Content column 1 - Job Info -->
+            <div class="w-64 flex flex-col space-y-2 p-4 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
+              <h2 class="text-2xl font-bold">Pure Storage</h2>
+              <p class="text-lg font-bold">Software Engineer Intern</p>
+              <p class="text-md italic pb-4">May 2025 - Present</p>
+              <img src="./icons/pure_storage.png" alt="Pure Storage" class="w-20 h-20 m-auto rounded-lg">
+            </div>
+
+            <!-- Content column 2 - Job Bullet Points -->
+            <div class="w-8/12 flex flex-col ml-20 p-4 pl-8 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
+              <ul class="list-disc space-y-2">
+                <li>Utilized Linux Perf to find a bottleneck on the hot path caused by C++ virtual call overhead. Refactored the code to
+                C++ templates to shift the overload resolution from run-time to compile time and increased throughput by 114%.</li>
+                <li>Identified another bottleneck with Linux Perf caused by loop overhead. Used C++ template meta-programming to
+                resolve loop bounds at compile time, enabling loop unrolling which increased throughput by another 51%.</li>
+                <li>Developed a robust unit and performance test generation system with C++20 template meta-programming and
+                GoogleTest, resulting in a 42% test coverage increase and a 50% decrease in future test development time</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
         <!-- Job Card 1 - MHI RJ Aviation -->
         <div class="job-card w-9/12 m-auto p-10 rounded-lg" style="background-image: url(./icons/mhi_card_bckrnd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
 
@@ -80,18 +110,17 @@
             <div class="w-64 flex flex-col space-y-2 p-4 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
               <h2 class="text-2xl font-bold">MHI RJ Aviation</h2>
               <p class="text-lg font-bold">Data Engineer Intern</p>
-              <p class="text-md italic pb-4">May 2024 - Present</p>
+              <p class="text-md italic pb-4">May 2024 - April 2025</p>
               <img src="./icons/mhi_logo.png" alt="MHI RJ Aviation" class="w-20 h-20 m-auto rounded-lg">
             </div>
 
             <!-- Content column 2 - Job Bullet Points -->
             <div class="w-8/12 flex flex-col ml-20 p-4 pl-8 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
               <ul class="list-disc space-y-2">
-                <li>Led the development of a suite of Batch and Python scripts that utilize Tkinter, Polars, and xlsxwriter to automate a large daily data extraction and processing pipeline, resulting in a <b>73% reduction in runtime</b>.</li>
-                <li>Developed a web application in Python using Dash, Plotly, Polars, and Tailwind that elegantly and dynamically
-                  visualizes sales and backlog data for a multi-million dollar warehouse relocation project.</li>
-                <li>Fine-tuned a time series sales forecasting model using XGBoost resulting in <b> 18% lower RMSE</b>.</li>
-                <li>Utilized PowerBI to transform and display sales data resulting in automatically-refreshing, maintenance-free dashboards</li>
+                <li>Optimized 4 ETL Pipelines up to 82% by refactoring from Pandas to Polars and optimizing legacy Python code to
+                Python 3.12 ensuring usage of Python optimization tools such as list comprehensions, generators, and decorators.</li>
+                <li>Developed 3 full-stack web apps in Python using Dash, Plotly, and Polars to dynamically display sales and backlog
+                data from an SQL database which provided executives with a detailed oversight of $10M+ total monthly revenue</li>
               </ul>
             </div>
 
@@ -116,7 +145,7 @@
             <!-- Content column 2 - Job Bullet Points -->
             <div class="w-8/12 flex flex-col ml-20 p-4 pl-8 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
               <ul class="list-disc space-y-2">
-                <li>Selected by the previous Co-Presidents and MacAI Executive Team to lead the organization.</li>
+                <li>Led new educational and project initiatives resulting in a record-high 1.3k+ member count.</li>
               </ul>
             </div>
 
@@ -161,6 +190,30 @@
       <div class="projects-container">
 
           <div class="project">
+            <h3>Redis Server</h3>
+            <p>Contains two basic implementations of a Redis server using C++20 and Linux. Compared event-driven vs threaded architectures in both latency and throughput.</p>
+            <div class="project-links">
+              <a href="https://github.com/ConnorUsaty/redis-server" target="_blank" class="github-button">GitHub</a>
+            </div>
+            <div class="flex flex-row space-x-6 justify-center tech-stack">
+              <img src="icons/cpp.png" alt="cpp">
+              <img src="icons/linux.png" alt="Linux">
+            </div>
+          </div>
+
+          <div class="project">
+            <h3>Market Order Book</h3>
+            <p>A C++20 implementation of a financial exchange order book optimized for low latency and high throughput.</p>
+            <div class="project-links">
+              <a href="https://github.com/ConnorUsaty/order-book" target="_blank" class="github-button">GitHub</a>
+            </div>
+            <div class="flex flex-row space-x-6 justify-center tech-stack">
+              <img src="icons/cpp.png" alt="cpp">
+              <img src="icons/linux.png" alt="Linux">
+            </div>
+          </div>
+
+          <div class="project">
             <h3>AI Sudoku Solver</h3>
             <p>Utilizes OpenCV and a CNN to extract the sudoku and classify the digits before solving.</p>
             <div class="project-links">
@@ -169,21 +222,6 @@
             <div class="flex flex-row space-x-6 justify-center tech-stack">
               <img src="icons/python.png" alt="Python">
               <img src="icons/tensorflow.png" alt="TensorFlow">
-            </div>
-          </div>
-          
-          <div class="project">
-            <h3>Pathfinding Algorithm Visualizer</h3>
-            <p>An interactive visualization tool for common pathfinding algorithms.</p>
-            <div class="project-links">
-              <a href="https://connorusaty.github.io/pathfinding-visualizer/" target="_blank" class="demo-button">Live Site</a>
-              <a href="https://github.com/ConnorUsaty/pathfinding-visualizer" target="_blank" class="github-button">GitHub</a>
-            </div>
-            <div class="flex flex-row space-x-6 justify-center tech-stack">
-              <img src="icons/react.png" alt="React">
-              <img src="icons/html.png" alt="HTML">
-              <img src="icons/css.png" alt="CSS">
-              <img src="icons/js.png" alt="JavaScript">
             </div>
           </div>
           
@@ -198,34 +236,6 @@
               <img src="icons/python.png" alt="C">
             </div>
           </div>
-
-          <div class="project">
-            <h3>YouTube to MP3 Converter</h3>
-              <p>A web app that can convert YouTube videos into downloadable MP3 files.</p>
-              <div class="project-links">
-                <a href="https://www.youtube.com/watch?v=DWJEE19_Wj0&ab_channel=ConnorUsaty" target="_blank" class="demo-button">Video Demo</a>
-                <a href="https://github.com/ConnorUsaty/youtube-to-mp3-converter" target="_blank" class="github-button">GitHub</a>
-              </div>
-              <div class="flex flex-row space-x-6 justify-center tech-stack">
-                <img src="icons/node.png" alt="Node">
-                <img src="icons/html.png" alt="HTML">
-                <img src="icons/css.png" alt="CSS">
-                <img src="icons/js.png" alt="JavaScript">
-              </div>
-          </div>
-
-<!--       
-          <div class="project">
-            <h3>Sudoku Game &amp Solver</h3>
-            <p>A Sudoku game with an interactive GUI that features a visual solver.</p>
-            <div class="project-links">
-              <a href="https://www.youtube.com/watch?v=HdGePtq2ICA&ab_channel=ConnorUsaty" target="_blank" class="demo-button">Video Demo</a>
-              <a href="https://github.com/ConnorUsaty/sudoku-solver" target="_blank" class="github-button">GitHub</a>
-            </div>
-            <div class="flex justify-center tech-stack">
-              <img src="icons/python.png" alt="Python">
-            </div>
-          </div> -->
 
         </div>
       </section>
@@ -258,7 +268,7 @@
       </section>
       
       <footer class="w-full py-4 bg-gray-950 text-center text-white font-bold">
-        <p>&copy; Connor Usaty 2024</p>
+        <p>&copy; Connor Usaty 2025</p>
       </footer>
 
     <script src="js/script.js"></script>
