@@ -55,7 +55,7 @@
         <h1 class="text-black font-bold text-center text-5xl">About</h1>
         <p>I am a Computer Engineering major with a minor in Statistics at McMaster University. I love problem-solving and have a passion for learning new skills. I am especially interested in <b>C++, high performance computing, concurrency, operating systems, distributed systems, algorithms</b>, and <b>data structures.</b></p>
 
-        <p>I have experience as a SWE Intern @ Pure Storage where I profiled <b>C++</b> code with <b>Linux Perf</b>, identifying bottlenecks and implementing different optimizations. Over the course of my internship I was able to speed up the decompression rate of a persistant metadata store by <b>2.65x (165%)</b>. I have also interned at MHI RJ Aviation as a Data Engineer Intern where I optimized ETL pipelines and created data visualizations with <b>Python</b> and <b>Polars</b>.</p>
+        <p>I have experience as a SWE Intern @ Pure Storage where I profiled <b>C++</b> code with <b>Linux Perf</b>, identifying bottlenecks and implementing different optimizations. Over the course of my internship I was able to speed up the decompression rate of a persistant metadata store by <b>5.07x (407%)</b>. I have also interned at MHI RJ Aviation as a Data Engineer Intern where I optimized ETL pipelines and created data visualizations with <b>Python</b> and <b>Polars</b>.</p>
 
         <p>I am also active in extracurriculars on campus. I am the <b>President</b> of the <b>McMaster Artificial Intelligence Society</b> and a member of the <b>McMaster Competitive Programming Club</b>.</p>
           
@@ -87,12 +87,12 @@
             <!-- Content column 2 - Job Bullet Points -->
             <div class="w-8/12 flex flex-col ml-20 p-4 pl-8 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
               <ul class="list-disc space-y-2">
-                <li>Utilized Linux Perf to find a bottleneck on the hot path caused by C++ virtual call overhead. Refactored the code to
-                C++ templates to shift the overload resolution from run-time to compile time and increased throughput by 114%.</li>
-                <li>Identified another bottleneck with Linux Perf caused by loop overhead. Used C++ template meta-programming to
-                resolve loop bounds at compile time, enabling loop unrolling which increased throughput by another 51%.</li>
+                <li>Worked with the FlashBlade Core Data team to optimize the decompression path of a persistent metadata store.</li>
+                <li>Profiled the hot path and identified bottlenecks with Linux Perf. Removed bottlenecks with classic HPC techniques
+                    such as compile-time calculations, loop unrolling, and vectorization which increased throughput by 407%.</li>
+                <li>Automated benchmark visualizations with Bash, Python, and matplotlib to save approximately 5 minutes per run.</li>
                 <li>Developed a robust unit and performance test generation system with C++20 template meta-programming and
-                GoogleTest, resulting in a 42% test coverage increase and a 50% decrease in future test development time</li>
+                    GoogleTest to validate the bit-level compression and decompression algorithms of the persistent metadata store</li>
               </ul>
             </div>
 
