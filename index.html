@@ -53,9 +53,9 @@
 
     <section id="about" class="w-full justify-center">
         <h1 class="text-black font-bold text-center text-5xl">About</h1>
-        <p>I am a Computer Engineering major with a minor in Statistics at McMaster University. I love problem-solving and have a passion for learning new skills. I am especially interested in <b>C++, high performance computing, concurrency, operating systems, distributed systems, algorithms</b>, and <b>data structures.</b></p>
+        <p>I am a Computer Engineering major at McMaster University. I love problem-solving and have a passion for learning new skills. I am especially interested in <b>C++, high performance computing, concurrency, operating systems, distributed systems, algorithms</b>, and <b>data structures</b>.</p>
 
-        <p>I have experience as a SWE Intern @ Pure Storage where I profiled <b>C++</b> code with <b>Linux Perf</b>, identifying bottlenecks and implementing different optimizations. Over the course of my internship I was able to speed up the decompression rate of a persistant metadata store by <b>5.07x (407%)</b>. I have also interned at MHI RJ Aviation as a Data Engineer Intern where I optimized ETL pipelines and created data visualizations with <b>Python</b> and <b>Polars</b>.</p>
+        <p>I was previously a SWE Intern @ Pure Storage, where I profiled <b>C++</b> code with <b>Linux Perf</b>, to identifying bottlenecks. I also had the opportunity to resolve these bottlenecks with many different optimization techniques such as brachnless logic, template meta-programming, loop unrolling, and SIMD/vectorization. Over the course of my internship I was able to increase the throughput of a persistant metadata store by <b>5.07x (407%)</b>. I have also interned at MHI RJ Aviation as a Data Engineer Intern where I optimized ETL pipelines and created data visualizations with <b>Python</b> and <b>Polars</b>.</p>
 
         <p>I am also active in extracurriculars on campus. I am the <b>President</b> of the <b>McMaster Artificial Intelligence Society</b> and a member of the <b>McMaster Competitive Programming Club</b>.</p>
           
@@ -80,7 +80,7 @@
             <div class="w-64 flex flex-col space-y-2 p-4 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
               <h2 class="text-2xl font-bold">Pure Storage</h2>
               <p class="text-lg font-bold">Software Engineer Intern</p>
-              <p class="text-md italic pb-4">May 2025 - Present</p>
+              <p class="text-md italic pb-4">May 2025 - August 2025</p>
               <img src="./icons/pure_storage.png" alt="Pure Storage" class="w-20 h-20 m-auto rounded-lg">
             </div>
 
@@ -146,6 +146,7 @@
             <div class="w-8/12 flex flex-col ml-20 p-4 pl-8 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
               <ul class="list-disc space-y-2">
                 <li>Led new educational and project initiatives resulting in a record-high 1.3k+ member count.</li>
+                <li>Developed CNN and neural network demos in Jupyter Notebook using TensorFlow, Keras, sklearn, and matplotlib to further attendees understanding of concepts such as data preprocessing, model validation, and model fine-tuning.</li>
               </ul>
             </div>
 
@@ -153,22 +154,22 @@
 
         </div>
 
-        <!-- Job Card 3 - MacAI Director of Education -->
-        <div class="job-card w-9/12 m-auto p-10 rounded-lg" style="background-image: url(./icons/macai_bckrnd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <!-- Job Card 3 - MacAI Director of Education
+        <div class="job-card w-9/12 m-auto p-10 rounded-lg" style="background-image: url(./icons/macai_bckrnd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;"> -->
 
           <!-- Content Row of Two Content Columns -->
-          <div class="flex flex-row items-start">
+          <!-- <div class="flex flex-row items-start"> -->
 
             <!-- Content column 1 - Job Info -->
-            <div class="w-64 flex-col space-y-2 p-4 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
+            <!-- <div class="w-64 flex-col space-y-2 p-4 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
               <h2 class="text-2xl font-bold">MacAI</h2>
               <p class="text-lg font-bold">Director of Education</p>
               <p class="text-md italic pb-4">Sept. 2023 - April 2024</p>
               <img src="./icons/macai_logo.png" alt="MHI RJ Aviation" class="w-20 h-20 m-auto rounded-lg">
-            </div>
+            </div> -->
 
             <!-- Content column 2 - Job Bullet Points -->
-            <div class="w-8/12 flex flex-col ml-20 p-4 pl-8 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
+            <!-- <div class="w-8/12 flex flex-col ml-20 p-4 pl-8 rounded-md" style="background-color:rgba(179,195,202,0.5); backdrop-filter:blur(10px);">
               <ul class="list-disc space-y-2">
                 <li>Led the Education Team composed of 7 bachelor's and 2 master's students.</li>
                 <li>Spearheaded the development and presentation of AI/ML workshops to educate students on a variety of topics such as
@@ -177,9 +178,9 @@
               </ul>
             </div>
 
-          </div>
+          </div> -->
 
-        </div>
+        <!-- </div> -->
 
       </div>
     </section>
@@ -191,7 +192,7 @@
 
           <div class="project">
             <h3>Redis Server</h3>
-            <p>Contains two basic implementations of a Redis server using C++20 and Linux. Compared event-driven vs threaded architectures in both latency and throughput.</p>
+            <p>Implemented two different server architectures - <b>multi-threaded</b> and <b>lock-free event-driven</b>. Compared them in both latency and throughput using Google Benchmark and std::chrono.</p>
             <div class="project-links">
               <a href="https://github.com/ConnorUsaty/redis-server" target="_blank" class="github-button">GitHub</a>
             </div>
